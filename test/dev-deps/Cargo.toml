@@ -1,0 +1,12 @@
+[package]
+name = "dev-deps"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# 有时仅在测试中才需要一些依赖（比如基准测试相关的）。
+# 这种依赖要写在 Cargo.toml 的 [dev-dependencies] 部分。
+# 这些依赖不会传播给其他依赖于这个包的包。
+[dev-dependencies]
+pretty_assertions = "1.4.1"
